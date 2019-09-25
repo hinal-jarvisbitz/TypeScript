@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-/*function demo(a: number, b: number) {
+function demo(a: number, b: number) {
   return a * b
 }
 
@@ -22,8 +22,8 @@ function sqr(person: Object): any {
 }
 
 const persons = sqr(person)
-console.log('personsssss', persons)*/
-/*
+console.log('personsssss', persons)
+
 interface HelloProps {
   name: string;
 }
@@ -32,12 +32,9 @@ interface BookState {
   bookName: string,
   auth: string,
   page: number
-}*/
-/*interface BookSubmit {
-  onOk: () => any
-}*/
+}
 
-/*class Hello extends React.Component<HelloProps, BookState> {
+class Hello extends React.Component<HelloProps, BookState> {
   // @ts-ignore
   public bookName: React.RefObject<HTMLInputElement>;
   // @ts-ignore
@@ -62,15 +59,13 @@ interface BookState {
   onSubmit = () => {
     //this.data = this.username.value;
     //console.log('this.props.name', this.data)
-    // if(typeof this.bookName.value === "string") {
+
     this.setState({
       bookName: this.bookName.value,
       auth: this.auth.value,
       page: this.page.value
     })
-    /!* }else {
-       alert('restrict')
-     }*!/
+
   }
 
   render() {
@@ -81,7 +76,7 @@ interface BookState {
         Author : <input type='text' placeholder='Author' ref={(e) => this.auth = e}/><br/><br/>
         Total Page : <input type='number' placeholder='Page' ref={(e) => this.page = e}/><br/><br/>
         <input type='button' name='Ok' value='ok' onClick={this.onSubmit}/><br/><br/>
-        <table border={'2'}>
+        <table>
           <body>
           <tr>
             <th>Book Name</th>
@@ -100,9 +95,9 @@ interface BookState {
   }
 }
 
-export default Hello;*/
+export default Hello;
 
-interface IntersaceUser {
+/*interface IntersaceUser {
   userName: string
 }
 
@@ -117,7 +112,7 @@ const ComplextState = ({ initialUser}: any) => {
   )
 }
 
-export default ComplextState
+export default ComplextState*/
 
 
 
